@@ -1,6 +1,9 @@
 # WhoSaidWhat
 Open Source Code and Data for ICDL 2024 Paper: Who Said What? An Automated Approach to Analyzing Speech in Preschool Classrooms
 
+Arxiv:https://arxiv.org/abs/2401.07342
+IEEE ICDL 2024: https://ieeexplore.ieee.org/document/10644508
+
 This project is designed to process and transcribe audio files using [OpenAI's Whisper](https://github.com/openai/whisper) model. It supports splitting audio into smaller segments, overlapping them, and transcribing the content.
 
 ## Whisper Part

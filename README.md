@@ -76,3 +76,38 @@ Main function for processing audio files. It loads the specified Whisper model, 
 Follow the instructions via: https://github.com/orasanen/ALICE
 
 ---
+
+## Alice Whisper Alignment and Language Feature Generation
+
+AliceWhisperAlign.ipynb - Diarization and Speech Alignment
+
+This notebook processes and aligns audio diarization data (RTTM) with Automated Speech Transcription (AST) data. The goal is to identify the speaker classification for each segment in the AST file based on the overlap with the RTTM data.
+
+### Features
+
+- **Speaker Diarization Alignment**: Reads RTTM files to identify speaker classes (e.g., child, male, female).
+- **AST Processing**: Reads AST files and assigns speaker labels to each segment based on RTTM overlap.
+- **Data Cleaning**: The notebook includes functionality to clean and filter overlapping or unwanted segments.
+- **Saving Results**: The cleaned and updated AST data is saved to CSV files for further analysis.
+
+### Notebook Breakdown
+
+#### Key Sections
+
+- **RTTM File Processing**: The RTTM file is read, and speaker classifications (such as `CHI`, `FEM`, `KCHI`, `MAL`) are extracted. The start and end times of each speaker's segment are stored in a DataFrame.
+  
+- **AST File Processing**: AST files are read, and for each segment, an attempt is made to find the corresponding speaker classification based on the overlap with the RTTM data.
+
+- **Overlap Calculation**: For each AST segment, the overlap with RTTM segments is calculated, and the speaker with the maximum overlap is assigned to that AST segment.
+
+- **Cleaning the AST Data**: The notebook includes code that removes overlapping or duplicate segments from the AST data.
+
+#### Example Usage
+
+After setting up the environment, run the notebook to align AST and RTTM data. It will produce CSV outputs containing AST segments annotated with the corresponding speaker classification.
+
+#### Output
+
+The notebook saves the cleaned and updated AST data in the `StarFish_<Date>_SyncAW` directory, naming the files as `Sync_<AST_File_Name>_AW.csv`.
+
+---

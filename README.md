@@ -70,3 +70,9 @@ Saves a list to a specified file using Python's `pickle` module.
 Main function for processing audio files. It loads the specified Whisper model, splits the audio into segments, and performs transcription on each segment.
 
 ---
+
+## Alice Part
+
+Follow the instructions via: https://github.com/orasanen/ALICE
+
+---

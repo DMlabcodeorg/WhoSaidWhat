@@ -36,3 +36,7 @@ If your CSV file has a column named `transcription`, the script will:
 3. Count the unique words.
 
 The output will be saved in a new Excel file with the name `Trans_Stat.xlsx`, as well as some detailed segments level analysis CSV files.
+
+---
+# Question and Response Reliability Analysis Processor
+Q&R.ipynb

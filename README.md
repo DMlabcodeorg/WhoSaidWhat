@@ -111,3 +111,9 @@ After setting up the environment, run the notebook to align AST and RTTM data. I
 The notebook saves the cleaned and updated AST data in the `StarFish_<Date>_SyncAW` directory, naming the files as `Sync_<AST_File_Name>_AW.csv`.
 
 ---
+
+## Reliability Analysis
+
+Follow the instructions and scripts in the subfolder ReliabilityAna
+
+---
